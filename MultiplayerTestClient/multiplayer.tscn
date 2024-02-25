@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx32h2ld2o3de"]
+
+[ext_resource type="Script" path="res://MultiplayerController.cs" id="1_k4upu"]
+
+[node name="Multiplayer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_k4upu")
+
+[node name="Join" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Join"
+
+[connection signal="pressed" from="Join" to="." method="OnJoinPressed"]
